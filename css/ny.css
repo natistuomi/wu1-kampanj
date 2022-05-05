@@ -123,13 +123,14 @@ main{
 }
 
 
-
+/*Layout skillnader vid olika skärmstorlekar*/
 @media (min-width: 36rem) {
     header, main, footer {
         max-width: 36rem;
     }
     header{
         flex-direction: row;
+    }
     main{
         flex-direction: row-reverse;
     }
