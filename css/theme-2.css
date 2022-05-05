@@ -3,6 +3,11 @@
     --color-light: #fdfeff;
     --color-primary: #362d42;
     --color-secondary: #d1aafb;
+    
+    --color-bluegreen: #1e6e6e;
+    --color-orange: #e29253;
+    --color-white: #e5e5e5;
+    --color-black: #282828;
 }
 
 body {
@@ -62,6 +67,9 @@ body {
     .navbar > .container {
         justify-content: space-between;
     }
+    .navbar{
+        position: fixed;
+    }
 }
 
 /* klasser för att styla texten i navbar */
@@ -84,14 +92,11 @@ body {
     font-size: 1.333rem;
 }
 
-q {
-    font-style: italic;
-}
-
 /* listan på dorgs, inneh¨åller flera cards */
 .staff {
     display: flex;
     column-gap: 1rem;
+    flex-direction: column;
 }
 
 .card {

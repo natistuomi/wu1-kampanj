@@ -4,46 +4,29 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            href="https://fonts.googleapis.com/icon?family=Material+Icons"
-            rel="stylesheet"
-        />
-        <link rel="stylesheet" href="css/reset.css" />
-        <link rel="stylesheet" href="css/style.css" />
-        <link rel="stylesheet" href="css/theme-2.css" /> <!-- prova att ta bort -->
+        <link rel="stylesheet" href="css/ny.css" />
         <title>Obalans</title>
     </head>
     <body>
-        <header class="container">
-            <div class="hero">
-                <div class="cta">
-                    <h1>Obalans</h1>
-                    <!-- https://jensnti.github.io/wu-exempel/knappar/ -->
-                    <p>Allt för en jämställd arbetsmarknad</p>
-                </div>
-                <nav class="navbar">
-                    <button class="navbar__toggle">
-                        <span class="material-icons"> menu </span>
-                    </button>
-                    <div class="navbar__collapse">
-                        <ul class="nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Kampanj</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#intro">Om oss</a>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
+        <header>
+            <div class="titlescreen">
+                <h1>Obalans</h1>
+                <p>Allt för en jämställd arbetsmarknad</p>
             </div>
+            <nav class="navbar">
+                <button class="navbar__toggle">
+                    <span class="material-icons"> menu </span>
+                </button>
+                <div class="navbar__collapse">
+                    <a class="nav-link" href="#kampanj">Kampanj</a>
+                    <a class="nav-link" href="#staff">Om oss</a>
+                    <a class="nav-link" href="">English</a>
+                </div>
+            </nav>
         </header>
 
-        <!-- https://jensnti.github.io/wu-exempel/hamburgermeny/ -->
-        
-        <!-- https://jensnti.github.io/wu-exempel/media-queries/ -->
         <main>
-            <section class="text" id="intro">
+            <section class="text" id="text">
                 <p class="lead">
                     Vårt samhälle är uppbyggt av lagar, system och processer. Vi 
                     får sällan uppleva varenda en av dem på ett personligt plan, 
@@ -53,7 +36,6 @@
                     att vår arbetsmarknad är obalanserad. Vårt samhälle kommer 
                     behöva anpassa sig för att skapa en jämställd arbetsmarknad.
                 </p>
-
                 <p>
                     Löneskillnader är troligen det första vi tänker på när vi får 
                     höra om jämställdhet på arbetsmarknaden, men lönegapet i Sverige 
@@ -126,7 +108,7 @@
                     <div class="card-header">
                         <img
                             src="img/charlesdeluvio-pOUA8Xay514-unsplash.jpg"
-                            alt="Dorg"
+                            alt="Person 1"
                         />
                     </div>
                     <h4>Person 1</h4>
@@ -135,7 +117,7 @@
                     <div class="card-header">
                         <img
                             src="img/charlesdeluvio-pOUA8Xay514-unsplash.jpg"
-                            alt="Dorg"
+                            alt="Person 2"
                         />
                     </div>
                     <h4>Person 2</h4>
@@ -144,7 +126,7 @@
                     <div class="card-header">
                         <img
                             src="img/charlesdeluvio-pOUA8Xay514-unsplash.jpg"
-                            alt="Dorg"
+                            alt="Person 3"
                         />
                     </div>
                     <h4>Person 3</h4>
@@ -152,7 +134,8 @@
             </section>
         </main>
         <footer>
-            
+            <p>Den här sidan är skapad av Natalie Tuomi i utbildningssyfte för kursen Webbutveckling 1.</p>
+            <img src="img/icons8-github.png" alt="github icon">
         </footer>
         <script defer src="js/menu.js"></script>
     </body>
