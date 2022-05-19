@@ -1,55 +1,162 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        .container {
-            margin-top: 5rem;
-            width: 100%;
-        }
-        p {
-            margin-bottom: 3rem;
-        }
-        .swatches {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            display: grid;
-            gap: 1rem;
-            grid-template-columns: repeat(auto-fit, minmax(20ch, 1fr));
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/ny.css" />
+        <title>Obalans</title>
+    </head>
+    <body>
+        <main>
+            <header>
+                <div class="titlescreen">
+                    <h1>Obalans</h1>
+                    <h4>Allt för en jämställd arbetsmarknad</h4>
+                </div>
+                <nav class="navbar">
+                    <div class="navbar__collapse">
+                        <a class="nav-link" href="#kampanj">Kampanj</a><br>
+                        <a class="nav-link mobile_heading" href="#lön">Löneskillnader</a><br class="mobile_heading">
+                        <a class="nav-link mobile_heading" href="#fördelning">Könsfördelning</a><br class="mobile_heading">
+                        <a class="nav-link mobile_heading" href="#poäng">Huvudpoängen</a><br class="mobile_heading">
+                        <a class="nav-link" href="#staff">Om oss</a><br>
+                        <a class="nav-link" href="">English</a>
+                    </div>
+                    <button class="navbar__toggle">
+                        <span class="material-icons"> menu </span>
+                    </button>
+                </nav>
+            </header>
 
-        }
-        .swatches li {
-            aspect-ratio: 1;
-            display: grid;
-            place-content: center;
-            border-radius: .5rem;
-            font-size: 3rem;
-            text-align: center;
-            border: 1px solid var(--color-shadow);
-        }
-    </style>
-</head>
-<body>
-    <main class="container">
-        <h1>Bygg din kampanj</h1>
-        <p>Välj en mall/tema kopiera html filen, skapa en tema-dittnamn.css och länka den.</p>
-        <ul class="swatches">
-            <li>
-                <a href="theme-no.html">Utan tema</a>
-            </li>
-            <li>
-                <a href="theme-1.html">Tema 1</a>
-            </li>
-            <li>
-                <a href="theme-2.html">Tema 2</a>
-            </li>
-        </ul>
-    </main>
-</body>
+            <div class="line"></div>
+
+            <div class="content">
+                <section class="text" id="text">
+                    <p class="lead">
+                        Vårt samhälle är uppbyggt av lagar, system och processer. Vi 
+                        får sällan uppleva varenda en av dem på ett personligt plan, 
+                        men arbetsmarknaden är en grundsten som vi alla måste beträda 
+                        under vår livstid. Det steget är inte alltid så lätt. Även om 
+                        Sverige är ett jämställt land så finns det tydliga tecken på 
+                        att vår arbetsmarknad är obalanserad. Vårt samhälle kommer 
+                        behöva anpassa sig för att skapa en jämställd arbetsmarknad.
+                    </p>
+                    <h3 class="mobile_heading" id="lön">Löneskillnader</h3>
+                    <p>
+                        Löneskillnader är troligen det första vi tänker på när vi får 
+                        höra om jämställdhet på arbetsmarknaden, men lönegapet i Sverige 
+                        minskar ständigt och har gjort det i 15 år. I Medlingsinstitutets 
+                        rapport “Löneskillnad mellan kvinnor och män 2020” (s. 13 - 14, 
+                        02.02.2021) beräknas grovt den nuvarande löneskillnaden vara under 
+                        10%. Den siffran är mindre med hänsyn till att det finns en 
+                        betydande diskrepans i arbetslivet mellan könen. Fler kvinnor arbetar 
+                        deltid och det är oftast de som lägger arbetet åt sidan för att ta 
+                        hand om barn eller andra familjemedlemmar. Den biologiska skillnaden 
+                        mellan kvinnor och män skapar differerande omständigheter i arbetslivet 
+                        då behovet av ledighet definitivt varierar när vi får barn. Samtidigt 
+                        är det svårt att jämföra lönerna eftersom vi ofta tillämpar individuell 
+                        lönesättning då våra personliga meriter och arbetsinsatser belönas. 
+                        Dessutom är kvinnor starkt överrepresenterade i lågavlönade branscher 
+                        medan de är underrepresenterade i högavlönade yrkesgrupper. En omfattande 
+                        faktor till löneskillnaderna i Sverige är valet av yrke. Målet är att vi 
+                        alla ska få likvärdiga förutsättningar gällande löner och vi är en bra 
+                        bit på vägen, men än finns det plats för förbättring.
+                    </p>
+                    <h3 class="mobile_heading" id="fördelning">Könsfördelning</h3>
+                    <p>
+                        Könsfördelningen på arbetsmarknaden kan bidra till en mångfald i 
+                        arbetsstyrkan. Mångfald gynnar oss alla, men även ur ett arbetsperspektiv 
+                        så finns det mycket att vinna på att ha ett varierat arbetslag. Olika 
+                        människor arbetar olika. Personliga styrkor eller idéer härstammar ofta 
+                        från egen erfarenhet och det gör det värdefullt att ha variation på 
+                        arbetsplatsen. Dessutom blir det enklare att hitta passande kompetens ur 
+                        en bred sökgrupp vid anställning av medarbetare. Dessvärre stämmer det här 
+                        inte överens med dagens arbetsmarknad då de flesta yrken är mans- eller 
+                        kvinnodominerade. Statistikmyndigheten skriver i sin publikation “På tal om 
+                        kvinnor och män 2020” (s. 66 - 67, 17.06.20) att enbart fyra av de 30 största 
+                        yrkena är jämnt fördelade mellan könen. Statistiken visar att kvinnor i 
+                        allmänhet arbetar med barn eller inom vård medan män har en stark lutning mot 
+                        teknik och fordons relaterade yrken.
+                    </p>
+                    <h3 class="mobile_heading" id="poängen">Huvudpoängen</h3>
+                    <p>
+                        Vid det här laget har vi alla någon gång blivit irriterade med det eviga 
+                        tjatet om jämställdhet. Det är naturligt att tycka att det börjar bli 
+                        överdrivet. Vi pratar konstant om statistik, rättigheter och orättvisor. Det 
+                        är sant att det ger en inblick i situationen och lika löner borde vara en 
+                        självklarhet, men poängen är inte att siffrorna ska vara briljanta. 
+                        Jämställdhet är trots allt inte ett påhitt som är till för samhällets fördel. 
+                        Jämställdhet är för individen. Självklart är det fördelaktigt om 
+                        arbetsmarknaden är jämnt könsfördelad, men det betyder inte nödvändigtvis att
+                        det är en synd när den inte riktigt håller måttet. Det handlar om en fråga. 
+                        Varför delar vi upp yrkena mellan oss? Är det för att vi vill undvika en 
+                        negativ stämning på könsuppdelade arbetsplatser? Är det för att vi är rädda för 
+                        vad andra ska tycka? Är det för att vi helt enkelt inte vågar gå emot normen? 
+                        Det är en trygghetsfråga att känna sig säker i att välja ett yrke, eller till 
+                        och med en utbildning, baserat på sitt egna intresse istället för orättvisa 
+                        förväntningar.
+                    </p>
+                    <p>
+                        Det finns mycket som kan bidra till en jämställd arbetsmarknad. Det viktigaste 
+                        steget är en attitydförändring. Vår arbetsmarknad kommer att kräva ett antal 
+                        praktiska anpassningar, men vi måste ta bort dem begränsningar vi själva sätter 
+                        upp. Begränsningar som inte fyller något annat syfte än att bestämma vad vi kan 
+                        eller inte kan göra. Det är dags att lyfta blicken, se problemet och handla 
+                        därefter.
+                    </p>
+                    <p>
+                        Arbetsmarknaden är i obalans.
+                    </p>
+                    <p>
+                        Vi kan vara jämvikten.
+                    </p>
+                </section>
+                <section class="staff">
+                    <h3>Om oss</h3>
+                    <p>Vi arbetar för att upplysa allmänheten om vår arbetsmarknad för
+                        att skapa lika förutsättningar.</p>
+                    <div class="card">
+                        <div class="card-header">
+                            <img
+                                src="img/charlesdeluvio-pOUA8Xay514-unsplash.jpg"
+                                alt="Person 1"
+                            />
+                        </div>
+                        <h4>Person 1</h4>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img
+                                src="img/charlesdeluvio-pOUA8Xay514-unsplash.jpg"
+                                alt="Person 2"
+                            />
+                        </div>
+                        <h4>Person 2</h4>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <img
+                                src="img/charlesdeluvio-pOUA8Xay514-unsplash.jpg"
+                                alt="Person 3"
+                            />
+                        </div>
+                        <h4>Person 3</h4>
+                    </div>
+                </section>
+            </div>
+            <footer>
+                <p>Den här sidan är skapad av Natalie Tuomi i utbildningssyfte för kursen Webbutveckling 1.</p>
+                <a href="https://github.com/natistuomi/wu1-kampanj"><img src="img/icons8-github.png" alt="github icon" class="github"></a>
+            </footer>
+        </main>
+        <script defer src="js/menu.js"></script>
+    </body>
 </html>

@@ -48,7 +48,6 @@ a:hover {
     .navbar__toggle {
         display: none;
     }
-
 }
 /* https://jensnti.github.io/wu-exempel/navigation/ */
 .nav {
@@ -114,17 +113,9 @@ body {
     padding: 3rem 0;
 }
 
-main{
-    display: flex;
-    flex-direction: column;
-}
-
 @media (min-width: 36rem) {
     .container {
         max-width: 36rem;
-    }
-    main{
-        flex-direction: row-reverse;
     }
 }
 @media (min-width: 48rem) {
