@@ -201,7 +201,7 @@ footer a:hover {
 }
  
 .card > * {
-    margin-top: 1.5rem;
+    margin-top: 3rem;
     display: flex;
     flex-direction: column;
     align-items: center;
