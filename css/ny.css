@@ -155,7 +155,7 @@ body{
     color: var(--color-black);
     padding: 2rem;
     text-align: justify;
-    text-justify: distribute;
+    text-justify: inter-word;
 }
 
 footer{
